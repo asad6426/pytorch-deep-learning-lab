@@ -1,0 +1,26 @@
+name: Train and test
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CPU-only PyTorch
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install pytest
+      - run: python -m pytest -q
+      - run: python train_transformer.py
+      - run: python train_cnn.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: training-results
+          path: results/
+          if-no-files-found: ignore

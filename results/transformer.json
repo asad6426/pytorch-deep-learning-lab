@@ -1,0 +1,48 @@
+{
+  "task": "sort 8 random digits",
+  "parameters": 101898,
+  "steps": 3000,
+  "seed": 42,
+  "device": "cpu",
+  "train_seconds": 48,
+  "final_token_accuracy": 1.0,
+  "final_sequence_accuracy": 0.9999,
+  "history": [
+    {
+      "step": 500,
+      "train_loss": 0.0017,
+      "token_accuracy": 0.9999,
+      "sequence_accuracy": 0.9995
+    },
+    {
+      "step": 1000,
+      "train_loss": 0.0024,
+      "token_accuracy": 0.9978,
+      "sequence_accuracy": 0.9828
+    },
+    {
+      "step": 1500,
+      "train_loss": 0.0003,
+      "token_accuracy": 1.0,
+      "sequence_accuracy": 0.9999
+    },
+    {
+      "step": 2000,
+      "train_loss": 0.0465,
+      "token_accuracy": 0.9822,
+      "sequence_accuracy": 0.867
+    },
+    {
+      "step": 2500,
+      "train_loss": 0.0002,
+      "token_accuracy": 1.0,
+      "sequence_accuracy": 0.9999
+    },
+    {
+      "step": 3000,
+      "train_loss": 0.0001,
+      "token_accuracy": 1.0,
+      "sequence_accuracy": 0.9999
+    }
+  ]
+}

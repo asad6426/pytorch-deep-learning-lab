@@ -1,6 +1,9 @@
 name: Train and test
 on:
   push:
+    paths-ignore:
+      - "**.md"
+      - "results/**"
   workflow_dispatch:
 jobs:
   train:

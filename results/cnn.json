@@ -1,0 +1,48 @@
+{
+  "dataset": "Fashion-MNIST",
+  "parameters": 50378,
+  "epochs": 5,
+  "seed": 42,
+  "device": "cpu",
+  "train_seconds": 314,
+  "final_test_accuracy": 0.9025,
+  "per_class_accuracy": {
+    "T-shirt/top": 0.941,
+    "Trouser": 0.99,
+    "Pullover": 0.898,
+    "Dress": 0.85,
+    "Coat": 0.854,
+    "Sandal": 0.978,
+    "Shirt": 0.594,
+    "Sneaker": 0.966,
+    "Bag": 0.986,
+    "Ankle boot": 0.968
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4257,
+      "test_accuracy": 0.8793
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2928,
+      "test_accuracy": 0.8841
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2689,
+      "test_accuracy": 0.9076
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.2458,
+      "test_accuracy": 0.8976
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2286,
+      "test_accuracy": 0.9025
+    }
+  ]
+}
